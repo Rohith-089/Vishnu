@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boppari Vishnu Vardhan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #d9a7c7, #fffcdc);
+      color: #333;
+      position: relative;
+    }
+
+    body::after {
+      content: "Vishnu Vardhan";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 5rem;
+      color: rgba(0, 0, 0, 0.05);
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 0;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+      z-index: 1;
+    }
+
+    header .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 1rem auto 0 auto;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease forwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #5f27cd;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    img.skill-icon, img.award-icon {
+      width: 50px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .skill-item {
+      margin-bottom: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="https://res.cloudinary.com/dd35isgkh/image/upload/v1752551110/my_zjbbpd.png">
+      <div>
+        <h1>Boppari Vishnu Vardhan</h1>
+        <p>ECE Student | SR University | Semester Topper</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring engineer pursuing B.Tech in Electronics and Communication at SR University. I aim to build innovative, real-world solutions using IoT and electronics. Awarded as Semester Topper.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/python.png" class="skill-icon" alt="Python"> Python</div>
+    <div class="skill-item"><img src="https://img.icons8.com/ios-filled/50/000000/matlab.png" class="skill-icon" alt="MATLAB"> MATLAB</div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/html-5--v1.png" class="skill-icon" alt="HTML"> HTML</div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/css3.png" class="skill-icon" alt="CSS"> CSS</div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/javascript--v1.png" class="skill-icon" alt="JavaScript"> JavaScript</div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Smart Mining Helmet with IoT</h3>
+    <p>This helmet detects methane and CO gas, sends emergency alerts, and includes sensors (temperature, humidity) to monitor underground safety conditions.</p>
+  </section>
+
+  <section id="Education">
+    <h2>Education</h2>
+    <ul>
+      <li>SR University – B.Tech (ECE), CGPA: 8.3 (2023-2027)</li>
+      <li>SR Junior College – Intermediate, 75% (2021-2023)</li>
+      <li>Trinity High School – SSC, GPA: 10 (2017-2021)</li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <p><img src="https://img.icons8.com/emoji/48/1st-place-medal-emoji.png" class="award-icon" alt="Award"> Semester Topper – SR University</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bopparivishnuvardhan@gmail.com">bopparivishnuvardhan@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919391870876">+91 93918 70876</a></p>
+    <p>Location: Warangal, Telangana, India</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Boppari Vishnu Vardhan</p>
+  </footer>
+</body>
+</html>
